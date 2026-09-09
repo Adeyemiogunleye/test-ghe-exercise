@@ -26,6 +26,9 @@ jobs:
       - name: Run tests
         run: |
           npm test
+      
+      - name: Deploy to server
+        run: npm run build
 
       - name: Deploy application
         if: success()
